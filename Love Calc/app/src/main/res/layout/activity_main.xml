@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <View android:id="@+id/emiter_top_left"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="-20dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <View android:id="@+id/emiter_top_right"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="-20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtBoy"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:fontFamily="@font/pacifico"
+            android:textColor="#B81D48"
+            android:background="@drawable/rect"
+            android:hint="Boy Name"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="love"
+            android:fontFamily="@font/pacifico"
+
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/edtGirl"
+                   android:fontFamily="@font/pacifico"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#B81D48"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:background="@drawable/rect"
+            android:hint="Girl Name"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtCalculate"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:background="@drawable/gradient_button"
+            android:hint="Calculate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtBoy"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/pacifico"
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:hint="Boy Name"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:tint="@android:color/white"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/txtGirl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:hint="Girl Name"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtPersentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:fontFamily="@font/pacifico"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:textSize="50sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:hint="Love is in the \n Air Drop"/>
+        <TextView
+            android:id="@+id/txtCalCulateAgain"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:background="@drawable/gradient_button"
+            android:hint="Calculate again"/>
+    </LinearLayout>
+
+</RelativeLayout>
